@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+.container {
+  display: grid; 
+  grid-template-columns: 1.5fr 2.5fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 9px 13px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+  align-items: center; 
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 24px;
+  }
+  .box{
+    border:solid 1px red;
+    border-radius: 20px;
+    background-color: ;
+  }
